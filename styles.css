@@ -6,7 +6,10 @@ body {
   max-width: 1140px;
   margin: 0 auto;
 }
-
+main {
+  max-width: 1047px;
+  margin: 0 auto;
+}
 /* shared styles */
 .primary-btn {
   background-color: rgba(224, 44, 109, 1);
@@ -15,6 +18,13 @@ body {
   font-weight: bold;
   color: white;
   border: none;
+  cursor: pointer;
+}
+.primary-btn:hover {
+  transition: 0.9s;
+  background-color: rgb(255, 255, 255);
+  color: rgb(0, 0, 0);
+  border: 1px solid black;
 }
 .dark-2 {
   color: rgb(95, 92, 92);
@@ -29,6 +39,12 @@ body {
 .list-parent {
   display: flex;
   justify-content: space-between;
+  color: tomato;
+}
+.list-parent > li:hover {
+  cursor: pointer;
+  text-decoration: underline;
+  transition: 1s;
 }
 
 .list-parent > li {
@@ -48,10 +64,15 @@ body {
 .header-section {
   margin-top: 80px;
   display: flex;
+
+  gap: 133px;
+  background-size: cover;
+}
+.header-image {
   background-image: url(./images/Circle\ design.svg);
   background-repeat: no-repeat;
   background-position: right bottom;
-  gap: 133px;
+  background-size: contain;
 }
 .header-content {
   max-width: 582px;
@@ -60,8 +81,7 @@ body {
 
 /* company-icon */
 .company-icon {
-  max-width: 1110px;
-  margin: 0 auto;
+  margin-left: 36px;
   margin-top: 80px;
   display: grid;
   grid-template-columns: repeat(7, 1fr);
@@ -74,8 +94,11 @@ body {
 }
 .collction-container {
   display: grid;
-  gap: 30px;
+  gap: 20px;
   grid-template-columns: repeat(3, 1fr);
+}
+.Collection-content:hover {
+  background-color: rgb(237, 238, 240);
 }
 
 .Collection-content {
@@ -94,4 +117,34 @@ body {
 }
 .collection-img {
   text-align: center;
+}
+#see {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  margin-top: 20px;
+  color: rgba(224, 44, 109, 1);
+  text-decoration: none;
+  gap: 5px;
+}
+
+/* feature-product */
+.feature-product {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+}
+
+/* brand-icon */
+.footer-container {
+  margin-top: 80px;
+  text-align: center;
+  background-color: rgba(170, 170, 170, 1);
+  padding: 30px;
+}
+.brand-icon {
+  display: flex;
+  justify-content: center;
+  gap: 23px;
+  font-size: 1.4rem;
 }
