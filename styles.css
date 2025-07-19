@@ -102,7 +102,6 @@ main {
 }
 
 .Collection-content {
-  text-align: start;
   box-shadow: 0 1px 2px 0;
   padding: 12px;
   border-radius: 6px;
@@ -147,4 +146,36 @@ main {
   justify-content: center;
   gap: 23px;
   font-size: 1.4rem;
+}
+
+.hide {
+  display: none;
+}
+
+/* styles media query */
+
+@media screen and (max-width: 576px) {
+  .navbar {
+    flex-direction: column;
+    align-items: center;
+  }
+  .list-parent {
+    flex-direction: column;
+    align-items: center;
+  }
+  .header-section {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+  .company-icon {
+    grid-template-columns: repeat(1, 1fr);
+    gap: 33px;
+  }
+  .collction-container {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .feature-product {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
