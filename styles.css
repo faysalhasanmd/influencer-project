@@ -171,7 +171,7 @@ main {
   .company-icon {
     grid-template-columns: repeat(1, 1fr);
     gap: 33px;
-    margin-left: 225px;
+    margin-left: 50%;
   }
   .collction-container {
     grid-template-columns: repeat(1, 1fr);
@@ -185,13 +185,16 @@ main {
     /* align-items: start; */
     justify-content: start;
     margin: 14px;
-    margin-left: 42px;
+    margin-left: 12px;
   }
   .header-content {
     text-align: center;
   }
   .feature-product {
     text-align: center;
+  }
+  .feature-img {
+    max-width: 100%;
   }
 }
 
